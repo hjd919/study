@@ -13,13 +13,28 @@
 * 配置nginx/etc/conf.d/default.conf
 * 配置docker-compose配置文件：端口
 
-## 后端php\lumen
-* 安装、配置 https://lumen.laravel.com/docs/5.6
+## api 
+*php\lumen
+ * 安装、配置 https://lumen.laravel.com/docs/5.6
 
-## 前端js\react\dva\ant-pro
+## 前端
+* js\react\dva\ant-pro
+ * 后台 https://github.com/ant-design/ant-design-pro
 
-linux
-切换用户执行命令
+*js\react\umi
+ * 前台 `git clone https://github.com/umijs/umi-dva-user-dashboard.git`
+ * demo https://github.com/umijs/umi/tree/master/examples
+
+## 微信小程序
+* js\dva
+ * https://github.com/yautah/dva-wxapp
+* wepy 
+ * https://github.com/dyq086/wxYuHanStore
+ * https://github.com/aben1188/awesome-wepy
+---
+
+## 其他
+* 切换用户执行命令
 ```
 useradd nagios
 passwd nagios

@@ -14,16 +14,21 @@
 * 配置docker-compose配置文件：端口
 
 ## api 
-*php\lumen
+* php\lumen
  * 安装、配置 https://lumen.laravel.com/docs/5.6
+* 新增 
+ * 同步下载代码 `git clone git@gitee.com:jdhu/api.git`
+ * 修改配置文件.env mysql配置
 
 ## 前端
 * js\react\dva\ant-pro
- * 后台 https://github.com/ant-design/ant-design-pro
+ * 后台 backend 
+  * https://github.com/ant-design/ant-design-pro
 
-*js\react\umi
- * 前台 `git clone https://github.com/umijs/umi-dva-user-dashboard.git`
- * demo https://github.com/umijs/umi/tree/master/examples
+* js\react\umi
+ * 前台 frontend
+  * `git clone https://github.com/umijs/umi-dva-user-dashboard.git`
+ * umi demo https://github.com/umijs/umi/tree/master/examples
 
 ## 微信小程序
 * js\dva
@@ -31,6 +36,7 @@
 * wepy 
  * https://github.com/dyq086/wxYuHanStore
  * https://github.com/aben1188/awesome-wepy
+ 
 ---
 
 ## 其他

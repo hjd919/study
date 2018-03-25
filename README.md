@@ -3,6 +3,7 @@
 ## 服务器 ubuntu16.04
 * docker 
   * 安装 https://docs.docker.com/install/linux/docker-ce/ubuntu/
+  * 配置不用root https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user
 * git 
   * 安装 `sudo apt-get install git`
   * 配置ssh公钥 gitee.com https://gitee.com/profile/sshkeys

@@ -13,6 +13,7 @@
   * 运行 `docker-compose up -d`
 * 配置nginx/etc/conf.d/default.conf
 * 配置docker-compose配置文件：端口
+* 使用docker部署nodejs\php应用 https://www.jianshu.com/p/410ec589cfc2
 
 ## 后端
 * php\lumen api

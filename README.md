@@ -21,8 +21,8 @@
 
 ## 前端
 * js\react\dva\ant-pro 后台 backend
- * `git clone git@github.com:hjd919/ant-design-pro.git --depth=1 backend`
- * 文档 https://pro.ant.design/docs/getting-started-cn
+  * `git clone git@github.com:hjd919/ant-design-pro.git --depth=1 backend`
+  * 文档 https://pro.ant.design/docs/getting-started-cn
 
 * js\react\dva\umi 前台 frontend
   * `git clone git@github.com:hjd919/umi-dva-user-dashboard.git --depth=1 frontend`

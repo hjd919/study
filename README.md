@@ -16,8 +16,8 @@
 
 ## 后端
 * php\lumen api
- * `git clone git@gitee.com:jdhu/api.git` -> 修改配置文件.env mysql配置
- * 文档 https://lumen.laravel.com/docs/5.6 
+  * `git clone git@gitee.com:jdhu/api.git` -> 修改配置文件.env mysql配置
+  * 文档 https://lumen.laravel.com/docs/5.6 
 
 ## 前端
 * js\react\dva\ant-pro 后台 backend

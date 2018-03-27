@@ -52,3 +52,8 @@ useradd nagios
 passwd nagios
 su - www-data -c '/usr/bin/docker exec dc_fpm_1 php reg_mrg/artisan schedule:run'
 ```
+
+* 查看linux版本
+```
+cat /etc/issue
+```

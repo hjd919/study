@@ -57,3 +57,4 @@ su - www-data -c '/usr/bin/docker exec dc_fpm_1 php reg_mrg/artisan schedule:run
 ```
 cat /etc/issue
 ```
+* 同步fork后原始的内容 https://www.zhihu.com/question/28676261

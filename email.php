@@ -11,8 +11,9 @@ class R
 
     public function write($command = '', $uid = 0)
     {
-        $url = ($this->type == 'imap' ? 'imap' : 'pop3') . ($this->secure
-            ? 's' : '') . '://' . $this->host . '/INBOX/;UID='.$uid;
+        $uid_str = $uid ? '/INBOX/;UID=' . $uid : '';
+        $url     = ($this->type == 'imap' ? 'imap' : 'pop3') . ($this->secure
+            ? 's' : '') . '://' . $this->host . $uid_str;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_USERPWD, "$this->username:$this->password");
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -51,5 +52,5 @@ $r->port     = '993';
 // echo $result = $r->write('STATUS "INBOX" (MESSAGES)');
 // die;
 $result = $r->write('', 2);
-preg_match('#base64[\r\n]+(.*?)[\r\n]+--==#s',$result,$match);
+preg_match('#base64[\r\n]+(.*?)[\r\n]+--==#s', $result, $match);
 print_r(base64_decode($match[1]));

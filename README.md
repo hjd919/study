@@ -21,12 +21,12 @@
   * 文档 https://lumen.laravel.com/docs/5.6 
 
 ## 前端
-* js\react\dva\ant-pro 后台 backend
-  * `git clone git@github.com:hjd919/ant-design-pro.git --depth=1 backend`
+* js\react\dva\ant-pro 后台 admin
+  * `git clone git@github.com:hjd919/ant-design-pro.git --depth=1 admin`
   * 文档 https://pro.ant.design/docs/getting-started-cn
 
-* js\react\dva\umi 前台 frontend
-  * `git clone git@github.com:hjd919/umi-dva-user-dashboard.git --depth=1 frontend`
+* js\react\dva\umi 前台 wap
+  * `git clone git@github.com:hjd919/wap.git --depth=1`
   * 文档 https://umijs.org/docs/zh-Hans/api.html
   * umi demo https://github.com/umijs/umi/tree/master/examples
 

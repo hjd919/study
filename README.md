@@ -10,6 +10,7 @@
 * docker-compose 
   * 安装 `https://docs.docker.com/compose/install/#install-compose`
   * 拉取dc代码 `git clone git@gitee.com:jdhu/dc.git`
+  * 配置中国加速 https://www.docker-cn.com/registry-mirror
   * 运行 `docker-compose up -d`
 * 配置nginx/etc/conf.d/default.conf
 * 配置docker-compose配置文件：端口

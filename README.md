@@ -10,15 +10,16 @@
 * docker-compose 
   * 安装 `https://docs.docker.com/compose/install/#install-compose`
   * 拉取dc代码 `git clone git@gitee.com:jdhu/dc.git`
-  * 配置中国加速 https://www.docker-cn.com/registry-mirror
-  * 运行 `docker-compose up -d`
+  * 配置中国加速 https://www.docker-cn.com/registry-mirror
+  * 运行 `docker-compose up -d`
 * 配置nginx/etc/conf.d/default.conf
 * 配置docker-compose配置文件：端口
 * 使用docker部署nodejs\php应用 https://www.jianshu.com/p/410ec589cfc2
+* 同步mysql数据库和表
 
 ## 后端
 * php\lumen api
-  * `git clone git@gitee.com:jdhu/api.git` -> 修改配置文件.env mysql配置
+  * `git clone git@gitee.com:jdhu/api.git` -> 修改配置文件.env mysql\oss配置,
   * 文档 https://lumen.laravel.com/docs/5.6 
 
 ## 前端

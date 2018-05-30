@@ -18,6 +18,7 @@
 * 配置docker-compose配置文件：端口
 * 使用docker部署nodejs\php应用 https://www.jianshu.com/p/410ec589cfc2
 * 同步mysql数据库和表
+* 配置nginx\fpm的配置文件以及系统优化
 
 ## 后端
 * php\lumen api

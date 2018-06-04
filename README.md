@@ -63,3 +63,6 @@ su - www-data -c '/usr/bin/docker exec dc_fpm_1 php reg_mrg/artisan schedule:run
 cat /etc/issue
 ```
 * 同步fork后原始的内容 https://www.zhihu.com/question/28676261
+
+## 服务器
+* [定时任务](https://www.baidu.com/link?url=EdVjt2uih5usT3CBl-isb-QGOb9JKpcsU97SHyp_5bc1NsfPRRchmXCxtPGi7z6ewBNlnpFfHQ4YTXlFRYknlK&wd=&eqid=ba0598e200022503000000025b14fe5e)

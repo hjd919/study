@@ -65,4 +65,12 @@ cat /etc/issue
 * 同步fork后原始的内容 https://www.zhihu.com/question/28676261
 
 ## 服务器
-* [定时任务](https://www.baidu.com/link?url=EdVjt2uih5usT3CBl-isb-QGOb9JKpcsU97SHyp_5bc1NsfPRRchmXCxtPGi7z6ewBNlnpFfHQ4YTXlFRYknlK&wd=&eqid=ba0598e200022503000000025b14fe5e)
+* [定时任务配置](https://www.baidu.com/link?url=EdVjt2uih5usT3CBl-isb-QGOb9JKpcsU97SHyp_5bc1NsfPRRchmXCxtPGi7z6ewBNlnpFfHQ4YTXlFRYknlK&wd=&eqid=ba0598e200022503000000025b14fe5e)
+
+## css3
+* flex浮动效果
+```
+flex-basis: 25%;  内部
+
+display: flex;flex-wrap: wrap;justify-content: flex-start; 外部
+```

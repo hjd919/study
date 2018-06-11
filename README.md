@@ -74,3 +74,7 @@ flex-basis: 25%;  内部
 
 display: flex;flex-wrap: wrap;justify-content: flex-start; 外部
 ```
+
+### php
+* 公共部分 common
+Selector 解析脚本

@@ -82,3 +82,6 @@ Selector 解析脚本
 (正则表达式)[https://cuiqingcai.com/1186.html]
 
 ### iptables -t filter -N DOCKER
+
+## 删除某个关键词的进程
+ps -ef|grep '关键词'|grep -v grep|awk '{print $2}'|xargs sudo kill

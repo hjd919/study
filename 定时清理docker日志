@@ -22,3 +22,13 @@ echo "==================== end clean docker containers logs   ==================
 查看日志
 `ls -lh $(find /var/lib/docker/containers/ -name *-json.log)`
 ```
+
+
+首先，您可以在VM中find日志path，其中包含：
+
+ docker inspect --format='{{.LogPath}}' NAME|ID 
+您可以使用screen连接到虚拟机
+
+1.screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+2.find /var/lib/docker/containers/ -name *-json.log
+3.>xxxx.log

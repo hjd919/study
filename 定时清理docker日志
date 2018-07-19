@@ -17,3 +17,8 @@ for log in $logs
 
 echo "==================== end clean docker containers logs   =========================="
 ```
+
+```
+查看日志
+`ls -lh $(find /var/lib/docker/containers/ -name *-json.log)`
+```

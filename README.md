@@ -24,6 +24,7 @@
 * php\lumen api
   * `git clone git@gitee.com:jdhu/api.git` -> 修改配置文件.env mysql\oss配置,
   * 文档 https://lumen.laravel.com/docs/5.6 
+  * composer加速 https://www.phpcomposer.com/
 
 ## 前端
 * js\react\dva\ant-pro 后台 admin

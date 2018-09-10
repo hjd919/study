@@ -86,3 +86,6 @@ Selector 解析脚本
 
 ## 删除某个关键词的进程
 ps -ef|grep '关键词'|grep -v grep|awk '{print $2}'|xargs sudo kill
+
+## composer安装docker
+docker run -v=$(pwd):/app dc_composer install --ignore-platform-reqs

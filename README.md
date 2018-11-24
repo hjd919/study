@@ -8,9 +8,10 @@
   * 配置不用root https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user
 * git 
   * 安装 `sudo apt-get install git`
-  * 配置ssh公钥 gitee.com https://gitee.com/profile/sshkeys
+  * 生成ssh公钥 https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+  * 配置ssh公钥 gitee.com https://gitee.com/profile/sshkeys
 * docker-compose 
-  * 安装 `https://docs.docker.com/compose/install/#install-compose`
+  * 安装 https://docs.docker.com/compose/install/#install-compose
   * 拉取dc代码 `git clone git@gitee.com:jdhu/dc.git`
   * 配置中国加速 https://www.docker-cn.com/registry-mirror
   * 运行 `docker-compose up -d`

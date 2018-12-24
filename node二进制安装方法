@@ -1,0 +1,51 @@
+node 之二进制安装方法
+
+来源：https://blog.csdn.net/qq_21816375/article/details/77108697
+
+wget 下载到相应的目录
+
+wget https://nodejs.org/dist/v6.11.2/node-v6.11.2-linux-x64.tar.xz 
+1
+2
+解压并复制到自己想放的目录：
+
+tar xvf node-v6.11.2-linux-x64.tar.xz
+cp -r node-v6.11.2-linux-x64 /opt/
+[root@reg ~]# whereis node
+node: /opt/node-v6.11.2-linux-x64/bin/node
+1
+2
+3
+4
+制作软连接
+
+ln -s node-v6.11.2-linux-x64 node-v6.11.2
+1
+然后写入/etc/profile
+
+[root@reg ~]# cat /etc/profile
+# /etc/profile
+
+......
+export NODE_HOME=/opt/node-v6.11.2
+export PATH=$NODE_HOME/bin:$PATH 
+1
+2
+3
+4
+5
+6
+执行以下名令,验证是否安装node成功
+
+source /etc/profile
+
+[root@reg ~]# node -v
+v6.11.2
+[root@reg ~]# npm -v
+3.10.10
+[root@reg ~]# 
+--------------------- 
+作者：qinzhao168 
+来源：CSDN 
+原文：https://blog.csdn.net/qq_21816375/article/details/77108697 
+版权声明：本文为博主原创文章，转载请附上博文链接！

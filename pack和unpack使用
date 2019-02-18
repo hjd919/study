@@ -1,0 +1,11 @@
+```
+// pack使用
+// $a = pack("C2", 0, 2);
+// for ($i = 0; $i < strlen($a); $i++) {
+//     echo ord($a[$i]) . PHP_EOL;
+// }
+// var_dump($a);
+
+// $b = unpack('C2', $a);
+// // var_dump($a);
+```

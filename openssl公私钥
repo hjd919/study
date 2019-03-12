@@ -1,0 +1,10 @@
+```
+openssl genrsa -out rsa_private_key.pem 1024 // 生成rsa私钥
+openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem // 生成rsa公钥
+
+rsa私钥转成pkcs8格式私钥
+openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out private_key.pem
+
+转成 pkcs1
+openssl rsa -in pkcs8密钥 -out rsa密钥
+```

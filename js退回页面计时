@@ -1,0 +1,13 @@
+跳转页面会停止计时器，back退回来会继续倒计时，业务优先都放计时器中,最先的倒计时业务在一秒后
+
+setTimeout(timerServerPayResult, 2000); // 查询业务
+setTimeout(function () {  // 跳转业务，早于查询业务
+    // alert('1')
+    var isTo = sessionStorage.getItem(cachekey)
+    if (!isTo) { //首次跳转，后面不做跳转
+        sessionStorage.setItem(cachekey, '1')
+        window.location.href = returnUrl // hjd
+    }
+}, 1000);
+
+返回时重新执行页面所有变量，如需保存，可用sessionStorage保存

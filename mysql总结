@@ -1,0 +1,33 @@
+https://cloud.tencent.com/developer/article/1402124
+
+## mysql慢查询日志
+开启：修改my.ini中的以下配置
+
+slow_query_log=ON  
+long_query_time=0.1  
+log_queries_not_using_index=ON 
+
+## mysql缓存
+ 开启缓存 my.ini 文件中修改
+ query_cache_type=ON query_cache_size=1024
+ 
+ 由于mysql的缓存时基于表的，所以表中的数据有任何更新，就会使缓存失效
+ 
+## mysql的查询流程 
+接收查询sql
+查询缓存，如果未命中，则会继续进行下一步
+解析器（parser）解析sql语句，生成解析树
+预处理器进行预处理，检查数据表和数据列是否存在，解析名字和别名等
+查询优化器（）进行优化处理，生成最优的执行计划
+调用存储引擎进行查询
+返回结果（生成第一条查询结果时就开始逐步返回，所以服务器不需要暂存结果）
+
+## mysql的架构图
+
+## 连接线程的command
+ 
+Sleep 等待刻划断的查询
+Query 正在执行查询
+Locked 等待表锁的释放
+Sorting result 正在对结果排序
+Sending data 正在发挥数据

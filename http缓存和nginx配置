@@ -1,0 +1,20 @@
+
+nginx配置
+```
+http {
+    #关闭etag 增加速度
+    etag off;
+    
+server{
+  location ~ .*\.(js|css) {
+      add_header Cache-Control no-cache;
+      # expires      3d;
+  }
+
+  location ~ .*\.(ico|jpg|jpeg|gif|png|swf|flv|ttf) {
+      expires     7d;
+  }
+}
+```
+
+    

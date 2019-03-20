@@ -1,0 +1,32 @@
+server {
+    listen  8082;
+    server_name xxx.com;
+    root  /app; # 静态页面目录
+
+    # include common/base.conf;
+    location ~ .*\.(js|css) {
+        add_header Cache-Control no-cache; # 每次都协商缓存，请求服务器
+        # expires      3d; #上线时设置为缓存
+    }
+
+    location ~ .*\.(ico|jpg|jpeg|gif|png|swf|flv) {
+        expires     7d;
+    }
+
+    # 正则匹配 php
+    location ~ .*\.php {
+        root   /app/api/public; # php目录
+        include common/php.conf;
+    }
+
+    # 静态资源
+    # include common/static.conf;
+    location ~ .*\.(js|css) {
+        add_header Cache-Control no-cache; # 每次都协商缓存，请求服务器
+        # expires      3d; #上线时设置为缓存
+    }
+
+    location ~ .*\.(ico|jpg|jpeg|gif|png|swf|flv) {
+        expires     7d;
+    }
+}

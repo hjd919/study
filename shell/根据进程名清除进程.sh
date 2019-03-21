@@ -1,0 +1,1 @@
+ps -ef|grep '关键词'|grep -v grep|awk '{print $2}'|xargs sudo kill
